@@ -1,7 +1,11 @@
 package twitter;
 
+import java.time.Instant;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Extract consists of methods that extract information from a list of tweets.
@@ -21,7 +25,21 @@ public class Extract {
      *         every tweet in the list.
      */
     public static Timespan getTimespan(List<Tweet> tweets) {
-        throw new RuntimeException("not implemented");
+        if(tweets.isEmpty()) {
+            throw new IllegalArgumentException("tweets size == 0");
+        }
+        
+        Instant early = tweets.get(0).getTimestamp();
+        Instant late = tweets.get(0).getTimestamp();
+        for(Tweet t : tweets) {
+            if(t.getTimestamp().isBefore(early)) {
+                early = t.getTimestamp();
+            }
+            if(t.getTimestamp().isAfter(late)) {
+                late = t.getTimestamp();
+            }
+        }
+        return new Timespan(early, late);
     }
 
     /**
@@ -40,7 +58,26 @@ public class Extract {
      *         include a username at most once.
      */
     public static Set<String> getMentionedUsers(List<Tweet> tweets) {
-        throw new RuntimeException("not implemented");
+        Set<String> mentionedUsers = new HashSet<>();
+
+        // Regex pattern for matching Twitter usernames
+        Pattern pattern = Pattern.compile("@([A-Za-z0-9_]{1,15})\\b");
+
+        // Iterate over all tweets
+        for (Tweet tweet : tweets) {
+            // Get the text of the tweet
+            String text = tweet.getText();
+
+            // Find all matches of the pattern in the tweet text
+            Matcher matcher = pattern.matcher(text);
+            while (matcher.find()) {
+                // Add the matched username (in lowercase) to the set of mentioned users
+                String username = matcher.group(1).toLowerCase();
+                mentionedUsers.add(username);
+            }
+        }
+
+        return mentionedUsers;
     }
 
     /* Copyright (c) 2007-2016 MIT 6.005 course staff, all rights reserved.

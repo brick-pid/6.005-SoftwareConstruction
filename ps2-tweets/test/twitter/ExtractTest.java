@@ -13,6 +13,18 @@ public class ExtractTest {
     /*
      * TODO: your testing strategies for these methods should go here.
      * Make sure you have partitions.
+     * 
+     * TimeSpan test strategy
+     * tweets.size(): 0, 1, >1
+     * 
+     * MentionedUser test strategy
+     * 对于提到的次数：
+     *  1. 被提到的用户数为0;
+     *  2. 被提到的用户数>0;
+     * 对于大小写：
+     *  1. 同一个用户名, 被提到时全部大写;
+     *  2. 同一个用户名, 被提到时全部小写;
+     *  3. 同一个用户名, 被提到时, 大小写混用
      */
     
     private static final Instant d1 = Instant.parse("2016-02-17T10:00:00Z");
@@ -20,6 +32,9 @@ public class ExtractTest {
     
     private static final Tweet tweet1 = new Tweet(1, "alyssa", "is it reasonable to talk about rivest so much?", d1);
     private static final Tweet tweet2 = new Tweet(2, "bbitdiddle", "rivest talk in 30 minutes #hype", d2);
+    private static final Tweet tweetCapital = new Tweet(3, "alyssa", "is it reasonable to talk about RIVEST so much?", d1);
+    private static final Tweet tweet4 = new Tweet(3, "alyssa", "is it reasonable to talk about @Rivest so much?", d1);
+    private static final Tweet tweet5 = new Tweet(3, "alyssa", "is it reasonable to talk about @RIVEST so much?", d1);
     
     @Test(expected=AssertionError.class)
     public void testAssertionsEnabled() {
@@ -35,10 +50,25 @@ public class ExtractTest {
     }
     
     @Test
+    public void testGetTimespanOneTweet() {
+        Timespan timespan = Extract.getTimespan(Arrays.asList(tweet1));
+        assertEquals("expected start", d1, timespan.getStart());
+        assertEquals("expected end", d1, timespan.getEnd());
+    }
+    
+    
+    @Test
     public void testGetMentionedUsersNoMention() {
         Set<String> mentionedUsers = Extract.getMentionedUsers(Arrays.asList(tweet1));
         
         assertTrue("expected empty set", mentionedUsers.isEmpty());
+    }
+    
+    @Test
+    public void testGetMentionUsersCapitalMention() {
+        Set<String> mentionedUsers = Extract.getMentionedUsers(Arrays.asList(tweet4, tweet5));
+        
+        assertTrue("expected size = 1", mentionedUsers.size() == 1);
     }
 
     /*
