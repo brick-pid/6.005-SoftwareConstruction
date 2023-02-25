@@ -43,6 +43,20 @@ public class Timespan {
     public Instant getEnd() {
         return end;
     }
+    
+    /**
+     * @param timestamp 
+     *                timestamp to be checked
+     * @return true if timestamp within timespan, false otherwise
+     */
+    public boolean withinTimespan(Instant timestamp) {
+        if(timestamp.equals(start) || timestamp.equals(end) 
+                || (timestamp.isAfter(start) && timestamp.isBefore(end))) {
+            return true;
+        }else {
+            return false;
+        }
+    }
 
     /*
      * @see Object.toString()

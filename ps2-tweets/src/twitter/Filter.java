@@ -1,5 +1,6 @@
 package twitter;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -24,7 +25,13 @@ public class Filter {
      *         in the same order as in the input list.
      */
     public static List<Tweet> writtenBy(List<Tweet> tweets, String username) {
-        throw new RuntimeException("not implemented");
+        List<Tweet> writtenBy = new ArrayList<>();
+        for(Tweet t: tweets) {
+            if(t.getAuthor().equals(username)) {
+                writtenBy.add(t);
+            }
+        }
+        return writtenBy;
     }
 
     /**
@@ -38,7 +45,13 @@ public class Filter {
      *         in the same order as in the input list.
      */
     public static List<Tweet> inTimespan(List<Tweet> tweets, Timespan timespan) {
-        throw new RuntimeException("not implemented");
+        List<Tweet> tweetsInTimespan = new ArrayList<>();
+        for(Tweet t : tweets) {
+            if(timespan.withinTimespan(t.getTimestamp())) {
+                tweetsInTimespan.add(t);
+            }
+        }
+        return tweetsInTimespan;
     }
 
     /**
@@ -57,7 +70,16 @@ public class Filter {
      *         same order as in the input list.
      */
     public static List<Tweet> containing(List<Tweet> tweets, List<String> words) {
-        throw new RuntimeException("not implemented");
+        List<Tweet> targetTweets = new ArrayList<>();
+        for(Tweet t : tweets) {
+            for(String word : words) {
+                if(t.getText().contains(word)) {
+                    targetTweets.add(t);
+                    break;
+                }
+            }
+        }
+        return targetTweets;
     }
 
     /* Copyright (c) 2007-2016 MIT 6.005 course staff, all rights reserved.

@@ -20,6 +20,9 @@ public class FilterTest {
     
     private static final Tweet tweet1 = new Tweet(1, "alyssa", "is it reasonable to talk about rivest so much?", d1);
     private static final Tweet tweet2 = new Tweet(2, "bbitdiddle", "rivest talk in 30 minutes #hype", d2);
+    private static final Tweet tweet3 = new Tweet(3, "brick", "hello world!", d2);
+    private static final Tweet tweet4 = new Tweet(4, "brick", "test!!", d2);
+    
     
     @Test(expected=AssertionError.class)
     public void testAssertionsEnabled() {
@@ -32,6 +35,22 @@ public class FilterTest {
         
         assertEquals("expected singleton list", 1, writtenBy.size());
         assertTrue("expected list to contain tweet", writtenBy.contains(tweet1));
+    }
+    
+    @Test
+    public void testWrittenByMultipleTweetsZeroResult() {
+        List<Tweet> writtenBy = Filter.writtenBy(Arrays.asList(tweet1, tweet3), "bbitdiddle");
+        
+        assertEquals("expected singleton list", 0, writtenBy.size());
+    }
+    
+    @Test 
+    public void testWrittenByMultipleTweetsMultipleResult() {
+        List<Tweet> writtenBy = Filter.writtenBy(Arrays.asList(tweet1, tweet2, tweet3, tweet4), "brick");
+        
+        assertEquals("expected singleton list", 2, writtenBy.size());
+        assertTrue("expected list to contain tweet", writtenBy.contains(tweet3));
+        assertTrue("expected list to contain tweet", writtenBy.contains(tweet4));
     }
     
     @Test
