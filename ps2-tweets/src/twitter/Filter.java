@@ -73,7 +73,7 @@ public class Filter {
         List<Tweet> targetTweets = new ArrayList<>();
         for(Tweet t : tweets) {
             for(String word : words) {
-                if(t.getText().contains(word)) {
+                if(t.getText().toLowerCase().contains(word.toLowerCase())) {
                     targetTweets.add(t);
                     break;
                 }
