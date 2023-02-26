@@ -1,5 +1,10 @@
 package twitter;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -38,7 +43,30 @@ public class SocialNetwork {
      *         either authors or @-mentions in the list of tweets.
      */
     public static Map<String, Set<String>> guessFollowsGraph(List<Tweet> tweets) {
-        throw new RuntimeException("not implemented");
+        Map<String, Set<String>> FollowsGraph = new HashMap<>();
+        Set<String> usernames = new HashSet<>();
+        
+        // Collect all username from tweets
+        for(Tweet t : tweets) {
+            if(!usernames.contains(t.getAuthor())) {
+                usernames.add(t.getAuthor().toLowerCase());
+            }
+        }
+        
+        // Construct Follows Graph based on Tweets Text}
+        for(Tweet t: tweets) {
+            String author = t.getAuthor();
+            for(String mentioned : Extract.getMentionedUsers(Arrays.asList(t))) {
+                if(!mentioned.equals(author) && usernames.contains(mentioned)) {
+                    if(!FollowsGraph.containsKey(author)) {
+                        Set<String> follows = new HashSet<>();                        
+                        FollowsGraph.put(author, follows);
+                    }
+                    FollowsGraph.get(author).add(mentioned);              
+                }
+            }
+        }
+        return FollowsGraph;
     }
 
     /**
@@ -51,7 +79,20 @@ public class SocialNetwork {
      *         descending order of follower count.
      */
     public static List<String> influencers(Map<String, Set<String>> followsGraph) {
-        throw new RuntimeException("not implemented");
+        Map<String, Integer> countFollowers = new HashMap<>();
+        for(String username : followsGraph.keySet()) {
+            countFollowers.put(username, 0);
+        }
+        for(Set<String> set: followsGraph.values()) {
+            for(String user: set) {
+                int originVal = countFollowers.get(user);
+                countFollowers.put(user, originVal + 1);
+            }
+        }
+        
+        List<String> influencers = new ArrayList<>(countFollowers.keySet());
+        Collections.sort(influencers, (a, b)-> countFollowers.get(b) - countFollowers.get(a));
+        return influencers;
     }
 
     /* Copyright (c) 2007-2016 MIT 6.005 course staff, all rights reserved.
