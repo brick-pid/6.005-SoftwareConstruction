@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="1" hostname="DESKTOP-AQ97O65" name="twitter.staff.SocialNetworkTestRunner" skipped="0" tests="1" time="0.308" timestamp="2023-02-25T10:12:22">
+<testsuite errors="0" failures="6" hostname="DESKTOP-AQ97O65" name="twitter.staff.SocialNetworkTestRunner" skipped="0" tests="14" time="0.208" timestamp="2023-02-26T04:23:11">
   <properties>
     <property name="ant.library.dir" value="C:\Users\winph\.p2\pool\plugins\org.apache.ant_1.10.12.v20211102-1452\lib" />
     <property name="java.specification.version" value="17" />
     <property name="sun.cpu.isalist" value="amd64" />
-    <property name="which.tests.ran" value="BETA" />
     <property name="sun.jnu.encoding" value="GBK" />
-    <property name="java.class.path" value="C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\lib\junit-4.12.jar;C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\lib\hamcrest-core-1.3.jar;C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\.grader\bin-impls-empty;C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\.grader\bin-impls-staff;C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\.grader\bin-tests-student;C:\Users\winph\.p2\pool\plugins\org.apache.ant_1.10.12.v20211102-1452\lib\ant-launcher.jar;C:\Users\winph\.p2\pool\plugins\org.apache.ant_1.10.12.v20211102-1452\lib\ant.jar;C:\Users\winph\.p2\pool\plugins\org.apache.ant_1.10.12.v20211102-1452\lib\ant-junit.jar;C:\Users\winph\.p2\pool\plugins\org.apache.ant_1.10.12.v20211102-1452\lib\ant-junit4.jar" />
+    <property name="which.tests.ran" value="BETA + FINAL" />
+    <property name="java.class.path" value="C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\lib\junit-4.12.jar;C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\lib\hamcrest-core-1.3.jar;C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\.grader\bin-impls-staff-final;C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\.grader\bin-tests-student;C:\Users\winph\.p2\pool\plugins\org.apache.ant_1.10.12.v20211102-1452\lib\ant-launcher.jar;C:\Users\winph\.p2\pool\plugins\org.apache.ant_1.10.12.v20211102-1452\lib\ant.jar;C:\Users\winph\.p2\pool\plugins\org.apache.ant_1.10.12.v20211102-1452\lib\ant-junit.jar;C:\Users\winph\.p2\pool\plugins\org.apache.ant_1.10.12.v20211102-1452\lib\ant-junit4.jar" />
     <property name="project.name" value="ps2-tweets" />
     <property name="java.vm.vendor" value="Oracle Corporation" />
     <property name="sun.arch.data.model" value="64" />
     <property name="user.variant" value="" />
     <property name="java.vendor.url" value="https://java.oracle.com/" />
-    <property name="build.sysclasspath" value="ignore" />
     <property name="os.name" value="Windows 10" />
     <property name="java.vm.specification.version" value="17" />
-    <property name="user.country" value="CN" />
+    <property name="build.sysclasspath" value="ignore" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="user.country" value="CN" />
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin" />
     <property name="problem.set" value="ps2" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.staff.SocialNetworkTestRunner skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\.grader\TEST-twitter.staff.SocialNetworkTestRunner.xml crashfile=C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\.grader\junitvmwatcher14177216921351581924.properties propsfile=C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\.grader\junit2472131108325824968.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.staff.SocialNetworkTestRunner skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\.grader\TEST-twitter.staff.SocialNetworkTestRunner.xml crashfile=C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\.grader\junitvmwatcher16832054922253673868.properties propsfile=C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\.grader\junit4708659660266908664.properties" />
     <property name="zipfile" value="my-submission.zip" />
     <property name="jdk.debug" value="release" />
-    <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
     <property name="sun.cpu.endian" value="little" />
+    <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
     <property name="user.home" value="C:\Users\winph" />
     <property name="user.language" value="zh" />
     <property name="grader.report.file" value="my-grader-report.xml" />
     <property name="java.specification.vendor" value="Oracle Corporation" />
     <property name="java.version.date" value="2023-01-17" />
     <property name="java.home" value="C:\Program Files\Java\jdk-17" />
-    <property name="file.separator" value="\" />
     <property name="basedir" value="C:\Users\winph\eclipse-workspace\6.005\ps2-tweets" />
+    <property name="file.separator" value="\" />
     <property name="java.vm.compressedOopsMode" value="Zero based" />
     <property name="line.separator" value="&#xd;&#xa;" />
     <property name="ant.java.version" value="17" />
@@ -51,7 +51,7 @@
     <property name="file.encoding" value="GBK" />
     <property name="ant.project.invoked-targets" value="all" />
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
-    <property name="didit.desc" value="Running your tests against a broken staff implementation. Succeeds when at least one of your tests fails, since this implementation has bugs." />
+    <property name="didit.desc" value="Running your tests against our good and bad implementations" />
     <property name="ant.core.lib" value="C:\Users\winph\.p2\pool\plugins\org.apache.ant_1.10.12.v20211102-1452\lib\ant.jar" />
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/" />
     <property name="java.io.tmpdir" value="C:\Users\winph\AppData\Local\Temp\" />
@@ -64,6 +64,7 @@
     <property name="sun.os.patch.level" value="" />
     <property name="native.encoding" value="GBK" />
     <property name="ant.version" value="Apache Ant(TM) version 1.10.12 compiled on October 13 2021" />
+    <property name="final.grading" value="true" />
     <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MATLAB\R2019b\bin;C:\Program Files\Java\jdk-14.0.1\bin;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\Qt\5.15.2\mingw81_64\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\winph\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\winph\AppData\Local\Programs\Python\Python37\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\winph\AppData\Local\Programs\Microsoft VS Code\bin;C:\mingw64\bin;C:\Program Files\Git;C:\Program Files\Git\bin;C:\Users\winph\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.2\bin;;C:\Users\winph\AppData\Roaming\npm;C:\Users\winph\Downloads\mongodb-shell-windows-x86_64-4.4.3\mongodb-win32-x86_64-windows-4.4.3\bin;;C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.2\bin;;C:\Users\winph\AppData\Local\Coursier\data\bin;C:\Users\winph\AppData\Local\JetBrains\IntelliJ IDEA 2022.3.2\bin;;." />
     <property name="java.vendor" value="Oracle Corporation" />
     <property name="java.vm.info" value="mixed mode, sharing" />
@@ -72,15 +73,161 @@
     <property name="java.class.version" value="61.0" />
     <property name="ant.project.default-target" value="all" />
   </properties>
-  <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffBadImpl_SocialNetwork_alwaysReturnsEmpty" time="0.09">
-    <failure message="None of your tests failed when run against our broken implementation: 3 tests ran with 0 failures in 4 ms." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: None of your tests failed when run against our broken implementation: 3 tests ran with 0 failures in 4 ms.
-	at twitter.staff.TestHelpers.assertFailure(TestHelpers.java:59)
-	at twitter.staff.SocialNetworkTestRunner.yourTests_staffBadImpl_SocialNetwork_alwaysReturnsEmpty(SocialNetworkTestRunner.java:23)
+  <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffGoodImpl_guessFollowsGraphAlternatingCase" time="0.039">
+    <failure message="Some of your tests failed when run against our correct implementation: 10 tests ran with 5 failures in 13 ms.&#xa;java.lang.AssertionError: expected empty graph&#xd;&#xa;    ...&#xd;&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphNoMention(SocialNetworkTest.java:59)&#xd;&#xa;    ...&#xd;&#xa;java.lang.AssertionError: expected graph size equals to 0&#xd;&#xa;    ...&#xd;&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphInvalidMentionNotAuthor(SocialNetworkTest.java:83)&#xd;&#xa;    ...&#xd;&#xa;java.lang.AssertionError: expected graph size equals to 1&#xd;&#xa;    ...&#xd;&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphCaseInsensetive(SocialNetworkTest.java:98)&#xd;&#xa;    ...&#xd;&#xa;java.lang.NullPointerException: Cannot invoke &quot;java.util.Set.size()&quot; because the return value of &quot;java.util.Map.get(Object)&quot; is null&#xd;&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphOneMention(SocialNetworkTest.java:67)&#xd;&#xa;    ...&#xd;&#xa;java.lang.AssertionError: expected graph size equals to 0&#xd;&#xa;    ...&#xd;&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphInvalidSelfMention(SocialNetworkTest.java:90)&#xd;&#xa;    ...&#xa;----" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Some of your tests failed when run against our correct implementation: 10 tests ran with 5 failures in 13 ms.
+java.lang.AssertionError: expected empty graph
+    ...
+    at twitter.SocialNetworkTest.testGuessFollowsGraphNoMention(SocialNetworkTest.java:59)
+    ...
+java.lang.AssertionError: expected graph size equals to 0
+    ...
+    at twitter.SocialNetworkTest.testGuessFollowsGraphInvalidMentionNotAuthor(SocialNetworkTest.java:83)
+    ...
+java.lang.AssertionError: expected graph size equals to 1
+    ...
+    at twitter.SocialNetworkTest.testGuessFollowsGraphCaseInsensetive(SocialNetworkTest.java:98)
+    ...
+java.lang.NullPointerException: Cannot invoke &quot;java.util.Set.size()&quot; because the return value of &quot;java.util.Map.get(Object)&quot; is null
+    at twitter.SocialNetworkTest.testGuessFollowsGraphOneMention(SocialNetworkTest.java:67)
+    ...
+java.lang.AssertionError: expected graph size equals to 0
+    ...
+    at twitter.SocialNetworkTest.testGuessFollowsGraphInvalidSelfMention(SocialNetworkTest.java:90)
+    ...
+----
+	at twitter.staff.TestHelpers.assertSuccess(TestHelpers.java:50)
+	at twitter.staff.SocialNetworkTestRunner.yourTests_staffGoodImpl_guessFollowsGraphAlternatingCase(SocialNetworkTestRunner.java:39)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 </failure>
   </testcase>
+  <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffGoodImpl_guessFollowsGraphReturnsEmptyNodes" time="0.006">
+    <failure message="Some of your tests failed when run against our correct implementation: 10 tests ran with 4 failures in 3 ms.&#xa;java.lang.AssertionError: expected empty graph&#xd;&#xa;    ...&#xd;&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphNoMention(SocialNetworkTest.java:59)&#xd;&#xa;    ...&#xd;&#xa;java.lang.AssertionError: expected graph size equals to 0&#xd;&#xa;    ...&#xd;&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphInvalidMentionNotAuthor(SocialNetworkTest.java:83)&#xd;&#xa;    ...&#xd;&#xa;java.lang.AssertionError: expected graph size equals to 1&#xd;&#xa;    ...&#xd;&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphCaseInsensetive(SocialNetworkTest.java:98)&#xd;&#xa;    ...&#xd;&#xa;java.lang.AssertionError: expected graph size equals to 0&#xd;&#xa;    ...&#xd;&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphInvalidSelfMention(SocialNetworkTest.java:90)&#xd;&#xa;    ...&#xa;----" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Some of your tests failed when run against our correct implementation: 10 tests ran with 4 failures in 3 ms.
+java.lang.AssertionError: expected empty graph
+    ...
+    at twitter.SocialNetworkTest.testGuessFollowsGraphNoMention(SocialNetworkTest.java:59)
+    ...
+java.lang.AssertionError: expected graph size equals to 0
+    ...
+    at twitter.SocialNetworkTest.testGuessFollowsGraphInvalidMentionNotAuthor(SocialNetworkTest.java:83)
+    ...
+java.lang.AssertionError: expected graph size equals to 1
+    ...
+    at twitter.SocialNetworkTest.testGuessFollowsGraphCaseInsensetive(SocialNetworkTest.java:98)
+    ...
+java.lang.AssertionError: expected graph size equals to 0
+    ...
+    at twitter.SocialNetworkTest.testGuessFollowsGraphInvalidSelfMention(SocialNetworkTest.java:90)
+    ...
+----
+	at twitter.staff.TestHelpers.assertSuccess(TestHelpers.java:50)
+	at twitter.staff.SocialNetworkTestRunner.yourTests_staffGoodImpl_guessFollowsGraphReturnsEmptyNodes(SocialNetworkTestRunner.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+</failure>
+  </testcase>
+  <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffBadImpl_guessFollowsGraphCompleteGraphBug" time="0.001" />
+  <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffBadImpl_influencersMustBeCaseInsensitiveBug" time="0.004" />
+  <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffBadImpl_influencersReturnsFirstInRankOnlyBug" time="0.004" />
+  <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffGoodImpl_guessFollowsGraphReturnsNoEmptyNodes" time="0.006">
+    <failure message="Some of your tests failed when run against our correct implementation: 10 tests ran with 1 failure in 3 ms.&#xa;java.lang.AssertionError: expected graph size equals to 0&#xd;&#xa;    ...&#xd;&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphInvalidMentionNotAuthor(SocialNetworkTest.java:83)&#xd;&#xa;    ...&#xa;----" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Some of your tests failed when run against our correct implementation: 10 tests ran with 1 failure in 3 ms.
+java.lang.AssertionError: expected graph size equals to 0
+    ...
+    at twitter.SocialNetworkTest.testGuessFollowsGraphInvalidMentionNotAuthor(SocialNetworkTest.java:83)
+    ...
+----
+	at twitter.staff.TestHelpers.assertSuccess(TestHelpers.java:50)
+	at twitter.staff.SocialNetworkTestRunner.yourTests_staffGoodImpl_guessFollowsGraphReturnsNoEmptyNodes(SocialNetworkTestRunner.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+</failure>
+  </testcase>
+  <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffBadImpl_guessFollowsGraphFollowsInWrongDirectionBug" time="0.003" />
+  <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffBadImpl_guessFollowsGraphAddsNonExistentUsersBug" time="0.005" />
+  <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffGoodImpl_guessFollowsGraphBidirectionalFollowing" time="0.006">
+    <failure message="Some of your tests failed when run against our correct implementation: 10 tests ran with 4 failures in 3 ms.&#xa;java.lang.AssertionError: expected empty graph&#xd;&#xa;    ...&#xd;&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphNoMention(SocialNetworkTest.java:59)&#xd;&#xa;    ...&#xd;&#xa;java.lang.AssertionError: expected graph size equals to 0&#xd;&#xa;    ...&#xd;&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphInvalidMentionNotAuthor(SocialNetworkTest.java:83)&#xd;&#xa;    ...&#xd;&#xa;java.lang.AssertionError: expected graph size equals to 1&#xd;&#xa;    ...&#xd;&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphCaseInsensetive(SocialNetworkTest.java:98)&#xd;&#xa;    ...&#xd;&#xa;java.lang.AssertionError: expected graph size equals to 0&#xd;&#xa;    ...&#xd;&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphInvalidSelfMention(SocialNetworkTest.java:90)&#xd;&#xa;    ...&#xa;----" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Some of your tests failed when run against our correct implementation: 10 tests ran with 4 failures in 3 ms.
+java.lang.AssertionError: expected empty graph
+    ...
+    at twitter.SocialNetworkTest.testGuessFollowsGraphNoMention(SocialNetworkTest.java:59)
+    ...
+java.lang.AssertionError: expected graph size equals to 0
+    ...
+    at twitter.SocialNetworkTest.testGuessFollowsGraphInvalidMentionNotAuthor(SocialNetworkTest.java:83)
+    ...
+java.lang.AssertionError: expected graph size equals to 1
+    ...
+    at twitter.SocialNetworkTest.testGuessFollowsGraphCaseInsensetive(SocialNetworkTest.java:98)
+    ...
+java.lang.AssertionError: expected graph size equals to 0
+    ...
+    at twitter.SocialNetworkTest.testGuessFollowsGraphInvalidSelfMention(SocialNetworkTest.java:90)
+    ...
+----
+	at twitter.staff.TestHelpers.assertSuccess(TestHelpers.java:50)
+	at twitter.staff.SocialNetworkTestRunner.yourTests_staffGoodImpl_guessFollowsGraphBidirectionalFollowing(SocialNetworkTestRunner.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+</failure>
+  </testcase>
+  <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffGoodImpl_influencersSameRankArbitraryOrder1" time="0.005">
+    <failure message="Some of your tests failed when run against our correct implementation: 10 tests ran with 4 failures in 1 ms.&#xa;java.lang.AssertionError: expected empty graph&#xd;&#xa;    ...&#xd;&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphNoMention(SocialNetworkTest.java:59)&#xd;&#xa;    ...&#xd;&#xa;java.lang.AssertionError: expected graph size equals to 0&#xd;&#xa;    ...&#xd;&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphInvalidMentionNotAuthor(SocialNetworkTest.java:83)&#xd;&#xa;    ...&#xd;&#xa;java.lang.AssertionError: expected graph size equals to 1&#xd;&#xa;    ...&#xd;&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphCaseInsensetive(SocialNetworkTest.java:98)&#xd;&#xa;    ...&#xd;&#xa;java.lang.AssertionError: expected graph size equals to 0&#xd;&#xa;    ...&#xd;&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphInvalidSelfMention(SocialNetworkTest.java:90)&#xd;&#xa;    ...&#xa;----" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Some of your tests failed when run against our correct implementation: 10 tests ran with 4 failures in 1 ms.
+java.lang.AssertionError: expected empty graph
+    ...
+    at twitter.SocialNetworkTest.testGuessFollowsGraphNoMention(SocialNetworkTest.java:59)
+    ...
+java.lang.AssertionError: expected graph size equals to 0
+    ...
+    at twitter.SocialNetworkTest.testGuessFollowsGraphInvalidMentionNotAuthor(SocialNetworkTest.java:83)
+    ...
+java.lang.AssertionError: expected graph size equals to 1
+    ...
+    at twitter.SocialNetworkTest.testGuessFollowsGraphCaseInsensetive(SocialNetworkTest.java:98)
+    ...
+java.lang.AssertionError: expected graph size equals to 0
+    ...
+    at twitter.SocialNetworkTest.testGuessFollowsGraphInvalidSelfMention(SocialNetworkTest.java:90)
+    ...
+----
+	at twitter.staff.TestHelpers.assertSuccess(TestHelpers.java:50)
+	at twitter.staff.SocialNetworkTestRunner.yourTests_staffGoodImpl_influencersSameRankArbitraryOrder1(SocialNetworkTestRunner.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+</failure>
+  </testcase>
+  <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffGoodImpl_influencersSameRankArbitraryOrder2" time="0.005">
+    <failure message="Some of your tests failed when run against our correct implementation: 10 tests ran with 4 failures in 2 ms.&#xa;java.lang.AssertionError: expected empty graph&#xd;&#xa;    ...&#xd;&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphNoMention(SocialNetworkTest.java:59)&#xd;&#xa;    ...&#xd;&#xa;java.lang.AssertionError: expected graph size equals to 0&#xd;&#xa;    ...&#xd;&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphInvalidMentionNotAuthor(SocialNetworkTest.java:83)&#xd;&#xa;    ...&#xd;&#xa;java.lang.AssertionError: expected graph size equals to 1&#xd;&#xa;    ...&#xd;&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphCaseInsensetive(SocialNetworkTest.java:98)&#xd;&#xa;    ...&#xd;&#xa;java.lang.AssertionError: expected graph size equals to 0&#xd;&#xa;    ...&#xd;&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphInvalidSelfMention(SocialNetworkTest.java:90)&#xd;&#xa;    ...&#xa;----" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Some of your tests failed when run against our correct implementation: 10 tests ran with 4 failures in 2 ms.
+java.lang.AssertionError: expected empty graph
+    ...
+    at twitter.SocialNetworkTest.testGuessFollowsGraphNoMention(SocialNetworkTest.java:59)
+    ...
+java.lang.AssertionError: expected graph size equals to 0
+    ...
+    at twitter.SocialNetworkTest.testGuessFollowsGraphInvalidMentionNotAuthor(SocialNetworkTest.java:83)
+    ...
+java.lang.AssertionError: expected graph size equals to 1
+    ...
+    at twitter.SocialNetworkTest.testGuessFollowsGraphCaseInsensetive(SocialNetworkTest.java:98)
+    ...
+java.lang.AssertionError: expected graph size equals to 0
+    ...
+    at twitter.SocialNetworkTest.testGuessFollowsGraphInvalidSelfMention(SocialNetworkTest.java:90)
+    ...
+----
+	at twitter.staff.TestHelpers.assertSuccess(TestHelpers.java:50)
+	at twitter.staff.SocialNetworkTestRunner.yourTests_staffGoodImpl_influencersSameRankArbitraryOrder2(SocialNetworkTestRunner.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+</failure>
+  </testcase>
+  <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffBadImpl_guessFollowsGraphMustBeCaseInsensitiveBug" time="0.003" />
+  <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffBadImpl_guessFollowsGraphSelfMentionBug" time="0.003" />
+  <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffBadImpl_influencersPrunesEmptyNodesBug" time="0.003" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

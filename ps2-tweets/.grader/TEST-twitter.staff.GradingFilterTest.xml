@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="DESKTOP-AQ97O65" name="twitter.staff.OriginalSocialNetworkTest" skipped="0" tests="3" time="0.108" timestamp="2023-02-26T04:22:59">
+<testsuite errors="0" failures="2" hostname="DESKTOP-AQ97O65" name="twitter.staff.GradingFilterTest" skipped="0" tests="21" time="0.169" timestamp="2023-02-26T04:23:07">
   <properties>
     <property name="ant.library.dir" value="C:\Users\winph\.p2\pool\plugins\org.apache.ant_1.10.12.v20211102-1452\lib" />
     <property name="java.specification.version" value="17" />
     <property name="sun.cpu.isalist" value="amd64" />
     <property name="sun.jnu.encoding" value="GBK" />
     <property name="which.tests.ran" value="BETA + FINAL" />
-    <property name="java.class.path" value="C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\lib\junit-4.12.jar;C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\lib\hamcrest-core-1.3.jar;C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\.grader\bin-tests-beta;C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\.grader\bin-impls-student;C:\Users\winph\.p2\pool\plugins\org.apache.ant_1.10.12.v20211102-1452\lib\ant-launcher.jar;C:\Users\winph\.p2\pool\plugins\org.apache.ant_1.10.12.v20211102-1452\lib\ant.jar;C:\Users\winph\.p2\pool\plugins\org.apache.ant_1.10.12.v20211102-1452\lib\ant-junit.jar;C:\Users\winph\.p2\pool\plugins\org.apache.ant_1.10.12.v20211102-1452\lib\ant-junit4.jar" />
+    <property name="java.class.path" value="C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\lib\junit-4.12.jar;C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\lib\hamcrest-core-1.3.jar;C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\.grader\bin-tests-final;C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\.grader\bin-impls-student;C:\Users\winph\.p2\pool\plugins\org.apache.ant_1.10.12.v20211102-1452\lib\ant-launcher.jar;C:\Users\winph\.p2\pool\plugins\org.apache.ant_1.10.12.v20211102-1452\lib\ant.jar;C:\Users\winph\.p2\pool\plugins\org.apache.ant_1.10.12.v20211102-1452\lib\ant-junit.jar;C:\Users\winph\.p2\pool\plugins\org.apache.ant_1.10.12.v20211102-1452\lib\ant-junit4.jar" />
     <property name="project.name" value="ps2-tweets" />
     <property name="java.vm.vendor" value="Oracle Corporation" />
     <property name="sun.arch.data.model" value="64" />
@@ -19,7 +19,7 @@
     <property name="user.country" value="CN" />
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin" />
     <property name="problem.set" value="ps2" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.staff.OriginalSocialNetworkTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\.grader\TEST-twitter.staff.OriginalSocialNetworkTest.xml crashfile=C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\.grader\junitvmwatcher11059844868787539470.properties propsfile=C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\.grader\junit13948066048615849647.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.staff.GradingFilterTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\.grader\TEST-twitter.staff.GradingFilterTest.xml crashfile=C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\.grader\junitvmwatcher16996215639482302168.properties propsfile=C:\Users\winph\eclipse-workspace\6.005\ps2-tweets\.grader\junit423117742405508812.properties" />
     <property name="zipfile" value="my-submission.zip" />
     <property name="jdk.debug" value="release" />
     <property name="sun.cpu.endian" value="little" />
@@ -51,7 +51,7 @@
     <property name="file.encoding" value="GBK" />
     <property name="ant.project.invoked-targets" value="all" />
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
-    <property name="didit.desc" value="Running the tests we gave you with the problem set on your implementation." />
+    <property name="didit.desc" value="Running our tests against your implementation" />
     <property name="ant.core.lib" value="C:\Users\winph\.p2\pool\plugins\org.apache.ant_1.10.12.v20211102-1452\lib\ant.jar" />
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/" />
     <property name="java.io.tmpdir" value="C:\Users\winph\AppData\Local\Temp\" />
@@ -73,9 +73,41 @@
     <property name="java.class.version" value="61.0" />
     <property name="ant.project.default-target" value="all" />
   </properties>
-  <testcase classname="twitter.staff.OriginalSocialNetworkTest" name="testGuessFollowsGraphEmpty" time="0.002" />
-  <testcase classname="twitter.staff.OriginalSocialNetworkTest" name="testAssertionsEnabled" time="0.0" />
-  <testcase classname="twitter.staff.OriginalSocialNetworkTest" name="testInfluencersEmpty" time="0.001" />
+  <testcase classname="twitter.staff.GradingFilterTest" name="testContainingPunctuation" time="0.004" />
+  <testcase classname="twitter.staff.GradingFilterTest" name="testWrittenByUnderscores" time="0.0" />
+  <testcase classname="twitter.staff.GradingFilterTest" name="testContainingNoResults" time="0.0" />
+  <testcase classname="twitter.staff.GradingFilterTest" name="testContainingNoWordsToCheck" time="0.0" />
+  <testcase classname="twitter.staff.GradingFilterTest" name="testContainingMultipleSearchWords" time="0.0" />
+  <testcase classname="twitter.staff.GradingFilterTest" name="testContainingNoFullWordMatch" time="0.012">
+    <failure message="expected empty list" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected empty list
+	at twitter.staff.GradingFilterTest.testContainingNoFullWordMatch(GradingFilterTest.java:346)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+</failure>
+  </testcase>
+  <testcase classname="twitter.staff.GradingFilterTest" name="testInTimespanEmptyList" time="0.001" />
+  <testcase classname="twitter.staff.GradingFilterTest" name="testWrittenByEmptyList" time="0.0" />
+  <testcase classname="twitter.staff.GradingFilterTest" name="testInTimespanSingleTweetTimespanInexact" time="0.001" />
+  <testcase classname="twitter.staff.GradingFilterTest" name="testContainingMustBeCaseInsensitive" time="0.0" />
+  <testcase classname="twitter.staff.GradingFilterTest" name="testContainingEmptyList" time="0.0" />
+  <testcase classname="twitter.staff.GradingFilterTest" name="testWrittenByMustBeCaseInsensitive" time="0.003">
+    <failure message="expected non-empty list" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected non-empty list
+	at twitter.staff.GradingFilterTest.testWrittenByMustBeCaseInsensitive(GradingFilterTest.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+</failure>
+  </testcase>
+  <testcase classname="twitter.staff.GradingFilterTest" name="testContainingSingleSearchWordSingleResult" time="0.0" />
+  <testcase classname="twitter.staff.GradingFilterTest" name="testInTimespanNoTweetsInSpan" time="0.0" />
+  <testcase classname="twitter.staff.GradingFilterTest" name="testInTimespanMultipleTweetsInexact" time="0.0" />
+  <testcase classname="twitter.staff.GradingFilterTest" name="testContainingSingleSearchWordMultipleResult" time="0.0" />
+  <testcase classname="twitter.staff.GradingFilterTest" name="testWrittenByAuthorNotFound" time="0.0" />
+  <testcase classname="twitter.staff.GradingFilterTest" name="testInTimespanTweetsOutOfOrder" time="0.0" />
+  <testcase classname="twitter.staff.GradingFilterTest" name="testInTimespanMultipleTweetsExact" time="0.0" />
+  <testcase classname="twitter.staff.GradingFilterTest" name="testWrittenByAuthorFound" time="0.0" />
+  <testcase classname="twitter.staff.GradingFilterTest" name="testInTimespanSingleTweetTimespanExact" time="0.0" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
